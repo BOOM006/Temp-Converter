@@ -1,0 +1,81 @@
+:root {
+  /*COLORS*/
+  --HEADER-BGCOLOR: #333;
+  --HEADER-COLOR: whitesmoke;
+  --GRADIENT-COLOR: rgb(246, 217, 217);
+  --BGCOLOR: #e59885;
+  --TABLE-BGCOLOR: rgba(255, 255, 255, 0.711);
+  --FOOTER-BGCOLOR: rgb(194, 186, 186);
+
+  /*FONTS*/
+  --FF: "Times New Roman";
+  --FS-INPUT: clamp(0.9rem, 1.6vw, 5rem);
+  --FS-TEXT: clamp(1rem, 1.8vw, 5rem); /*Texty - a, p*/
+  --FS-H1: clamp(2rem, 2.5vw, 6rem); /*Nadpis h1*/
+  --FS-H2: clamp(1.6rem, 2.5vw, 6rem); /*Nadpis h2*/
+  --FS-H3: clamp(1.5rem, 2.2vw, 5.8rem); /*Nadpis h3*/
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  font-size: var(--FS-H1);
+}
+
+form {
+  padding: 1rem;
+  background-color: bisque;
+  border: 3px solid burlywood;
+  border-radius: 3rem;
+  width: 40%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#input {
+  width: 35%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: var(--FS-INPUT);
+}
+
+label {
+  font-size: var(--FS-TEXT);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 1.2rem;
+  font-size: var(--FS-TEXT);
+  background-color: hsla(120, 100%, 25%, 0.411);
+  cursor: pointer;
+}
+
+#result {
+  min-height: 3rem;
+  font-size: var(--FS-TEXT);
+  color: red;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  width: 60%;
+  border-radius: 3rem;
+  visibility: hidden;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
